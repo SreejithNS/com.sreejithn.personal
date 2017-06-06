@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "com.sreejithn.personal"
+    versionCode = "11"
+    version     = "1.0.0" >
+
+<name>Personal</name>
+<description>This app is developed by Sreejith N for a Personal use.</description>
+<author email="nssreejith229@gmail.com">Sreejith N</author>
+<platform name="android">
+ <preference name="Fullscreen" value="true" />
+  <icon src="icon.png" width="180" height="180" />
+</platform>
+</widget>
