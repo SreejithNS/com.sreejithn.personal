@@ -1,0 +1,27 @@
+#pass {
+	border:1px solid grey;
+	background-color:grey;
+	border-radius:5px;
+	outline:none;
+	padding-left:5px;
+	color:white;
+	font-size:15px;
+	height:30px;
+	text-align:center;
+}
+#form {
+	margin:10%;
+}
+#login-error-inline {
+	color:white;
+}
+
+.ui-dialog-contain {
+	width: 92.5%;
+	max-width: 500px;
+	margin: 10% auto 15px auto;
+	padding: 0;
+	position: relative;
+	top: -15px;
+}
+}
