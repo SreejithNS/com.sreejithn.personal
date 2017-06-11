@@ -9,7 +9,6 @@
 <description>This app is developed by Sreejith N for a Personal use.</description>
 <author email="nssreejith229@gmail.com">Sreejith N</author>
 <platform name="android">
-<plugin name="Storage" value="org.apache.cordova.Storage" />
  <preference name="Fullscreen" value="true" />
   <icon src="icon.png" width="180" height="180" />
 </platform>
