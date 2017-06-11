@@ -24,4 +24,15 @@
 	position: relative;
 	top: -15px;
 }
+.logout{
+	margin-left:5px;
+}
+#line {
+	width:100%;
+    animation: expand 2s 1;
+
+}
+@keyframes expand {
+    0%   {width:1%;}
+    100% {width:100%;}
 }

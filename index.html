@@ -7,50 +7,95 @@
   <link rel="stylesheet" href="mystyle.css"/>
   <script src="jquery-1.11.3.min.js"></script>
   <script src="jquery.mobile-1.4.5.min.js"></script>
+  <script src="cordova.js"></script>
    <script src="funtions.js"></script>
 </head>
-<body>
+<body onload="onLoad();">
 
 <div data-role="page" id="index" data-theme="b">
   
 
   <div data-role="main" class="ui-content">
- 
-    <form align="center" class="form" id="form">
+
+    <form align="center" class="form" id="form" onsubmit="login()">
+	<br/><br/><br/>
 	 <img src="icon.png" style="display: block;margin:auto;;width: 50%;"/>
 	<input type="password" id="pass"/>
-	<input type="button" id="login-btn" value="LOGIN" onClick="login()"/>
+	<input type="button" id="login-btn" value="LOGIN"/>
+	
 
 
 	</form>
+	<div data-role="footer" class="ui-footer" data-position="fixed" data-position-fixed="true"><hr id="line" style="color:#1abc9c;border:2px solid #1abc9c;"></div>
   </div>
 </div>
+ 
 
-</div> 
-
-<div data-role="page" data-overlay-theme="b" data-close-btn="right" data-dialog="true" id="login-error" data-dom-cache="true">
+<div data-role="page" data-overlay-theme="b" data-close-btn="right" data-dialog="true" id="login-error" data-dom-cache="true" style="margin:auto;">
   <div data-role="header">
-    <h2>Dialog</h2>
+    <h2>Sorry!</h2>
   </div>
   <div role="main" class="ui-content">
-    <p id="login-error-inline">I am a dialog</p>
+    <p id="login-error-inline">The master password you have entered is absolutely Wrong!</p>
   </div>
   </div>
   
 <div data-role="page" id="home" data-theme="b" data-dom-cache="true">
   <div data-role="header" data-position="fixed" class="ui-header">
-  <h1 style="color:cyan;">HOME</h1><a href="#panel">PANEL</a>
+  <h1 style="color:cyan;">HOME</h1><a href="#panel">: :</a>
   </div>
 
   <div data-role="main" class="ui-content">
+  <div data-role="collapsibleset">
+  <div data-role="collapsible" data-theme="b" data-content-theme="b">
+    <h4>Google</h4>
+    <p>User Name: nssreejith229@gmail.com
+	<br>Password : unlockgmail</p>
+	</div>
+	<div data-role="collapsible" data-theme="b" data-content-theme="b">
+    <h4 id="h4">Facebook</h4>
+    <p>Email ID: nssreejith229@gmail.com
+	<br>Phone No.: 9994596924
+	<br>Password : Pazzword1</p>
+	</div>
+	<div data-role="collapsible" data-theme="b" data-content-theme="b">
+    <h4 id="h4">Twitter</h4>
+    <p>Email ID: nssreejith229@gmail.com
+	<br/>UserID: @Sreejith__Sree
+	<br>Password : unlocktwitter</p>
+	</div>
+	<div data-role="collapsible" data-theme="b" data-content-theme="b">
+    <h4 id="h4">Instagram</h4>
+    <p>Email ID: nssreejith229@gmail.com
+	<br/>UserID: sreejith_n_subramanian
+	<br>Password : Pazzword1</p>
+	</div>
+	<div data-role="collapsible" data-theme="b" data-content-theme="b">
+	<h4 id="h4">Adobe ID</h4>
+    <p>Email ID: nssreejith229@gmail.com
+	<br>Password : Pazzword1</p>
+	</div>
+	<div data-role="collapsible" data-theme="b" data-content-theme="b">
+	<h4 id="h4">GitHub ID</h4>
+    <p>Email ID: nssreejith229@gmail.com
+	<br>Password : Pazzword1
+	<br/>User ID: SreejithNS
+	<br/></p><div data-role="collapsible" data-theme="b" data-content-theme="b">
+	<h4 id="h4">GitHub Repositories</h4>
+	<p>com.sreejithn.personal
+	<br/>APP-VAULT</p>
+	</div>
+	</div>
+</div>
 </div>
 
 <div data-role="panel" class="ui-panel" id="panel" date-theme="b" data-display="overlay">
-	<a href="#home" data-role="button" data-theme="b">Login</a>
-	<div data-role="footer" data-position="fixed">
-	<a href="#index" data-role="button" class="ui-icon-delete ui-btn-icon-left">LOGOUT</a>
+	<a href="#" data-role="button" onclick="panelbutton()" data-theme="b">HOME</a>
+	<div data-role="footer" class="ui-footer" data-position="fixed">
+	<a href="#index" data-role="button" class="ui-icon-delete ui-btn-icon-left logout" data-transition="flow">LOGOUT</a>
 	</div>
-</div> 
+</div>
+
 
 
 </body>
